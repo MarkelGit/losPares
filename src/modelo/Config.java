@@ -8,8 +8,8 @@ package modelo;
  */
 public interface Config {
 	//TODO rellenar el fichero de configuracion
-	public static final String BBDD = "";
-	public static final String HOST = "";
-	public static final String USERNAME = "";
+	public static final String BBDD = "lospares";
+	public static final String HOST = "localhost";
+	public static final String USERNAME = "root";
 	public static final String PASSWORD = "";
 }

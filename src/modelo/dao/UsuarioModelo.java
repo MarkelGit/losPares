@@ -2,6 +2,8 @@ package modelo.dao;
 
 import java.util.ArrayList;
 
+import modelo.bean.Usuario;
+
 public class UsuarioModelo {
 
 	// ArrayList<Usuario> selectTodos = new ArrayList<Usuario>();

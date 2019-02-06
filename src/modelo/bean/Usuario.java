@@ -68,22 +68,26 @@ public class Usuario extends Persona{
 
 	//----------------------------FUNCIONES----------------------------
 	
+	/**
+	 * Esta función recibirá el nombre y apellido de la persona
+	 * y le asignara el nombre de usuario y contraseña que la
+	 * persona introduzca.
+	 * @param nombre
+	 * @param apellido
+	 */
 	@Override
 	public void registrarse(String nombre, String apellido) {
 		// TODO Auto-generated method stub
-		/**
-		 * Esta función recibirá el nombre y apellido de la persona
-		 * y le asignara el nombre de usuario y contraseña que el
-		 * introduzca.
-		 */
 		
 	}
 	
+	/**
+	 * Esta función recibirá el nombre de usuario y la contraseña
+	 * y logueará al usuario si los datos están en la BBDD.
+	 * @param nombreUsuario
+	 * @param contraseña
+	 */
 	public void logIn(String nombreUsuario, String contraseña) {
-		/**
-		 * Esta función recibirá el nombre de usuario y la contraseña
-		 * y logueará al usuario si los datos están en la BBDD.
-		 */
 		
 	}
 

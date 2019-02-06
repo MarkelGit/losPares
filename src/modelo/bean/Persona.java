@@ -42,6 +42,14 @@ public abstract class Persona {
 	
 	//----------------------------FUNCIONES----------------------------
 	
+	/**
+	 * Se implementa en la clase Usuario
+	 * Esta función recibirá el nombre y apellido de la persona
+	 * y le asignara el nombre de usuario y contraseña que la
+	 * persona introduzca.
+	 * @param nombre
+	 * @param apellido
+	 */
 	public abstract void registrarse(String nombre, String apellido);
 	
 }

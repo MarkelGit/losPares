@@ -1,4 +1,4 @@
-package modelo;
+package modelo.dao;
 /**
  * Inteface Config creada almacenar guardar parametros
  * de conexion con la BBDD

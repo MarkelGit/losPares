@@ -1,9 +1,9 @@
-package modelo;
+package modelo.dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import modelo.Config;
+import modelo.dao.Config;
 /**
  * Clase Conector realiza y contiene la conexion con la BBDD
  * @author Enaut Agirre

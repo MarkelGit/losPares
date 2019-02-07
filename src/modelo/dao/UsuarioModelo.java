@@ -13,7 +13,6 @@ public class UsuarioModelo extends Conector {
 
 	UsuarioModelo() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

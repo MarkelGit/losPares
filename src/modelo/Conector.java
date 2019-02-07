@@ -13,7 +13,7 @@ public class Conector {
 	
 	protected Connection conexion;
 
-	Conector() {
+	protected Conector() {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				this.conexion = DriverManager.getConnection("jdbc:mysql://" + Config.HOST + "/" + Config.BBDD + "?zeroDateTimeBehavior=convertToNull", Config.USERNAME, Config.PASSWORD );

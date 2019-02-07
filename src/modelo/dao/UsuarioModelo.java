@@ -1,5 +1,7 @@
 package modelo.dao;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import modelo.Conector;
@@ -31,7 +33,25 @@ public class UsuarioModelo extends Conector {
 
 	public boolean insert(Usuario usuario) {
 		//INSERT INTO `usuario`(`idUsuario`, `username`(Rellenado), `contraseña`(Rellenado), `Email`(Rellenado), `activo`, `idRol`, `id_persona`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7])
-		return false;
+		//TODO poner nombres de campos en minuscula. Quitar de todo el proyecto caracteres raros.
+		String insert="INSERT INTO usuario( username, contraseña, Email) VALUES (?,?,?)";
+		try {
+			PreparedStatement pst = this.conexion.prepareStatement(insert);
+			pst.setString(1, usuario.getNombreUsuario());
+			pst.setString(2, usuario.getContraseña());
+			pst.setString(3, usuario.getEmail());
+			
+			boolean ok = pst.execute();
+			
+			return ok;
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+			return false;
+		}
+		
+		
+	
 
 	}
 

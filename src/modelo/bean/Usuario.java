@@ -26,6 +26,10 @@ public class Usuario extends Persona{
 
 	//----------------------------GETTERS & SETTERS----------------------------
 	
+	public Usuario() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getIdusuario() {
 		return idusuario;
 	}

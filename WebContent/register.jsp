@@ -17,19 +17,19 @@
 
     <div class="border border-primary container" style="margin-top: 20px; padding: 12px; max-width: 40%">
         <h1>REGISTER</h1>
-        <form>
+        <form action="guardarusuario" method="POST">
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="inputUsername">Username</label>
-                    <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                    <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="inputUsername">
                 </div>
                 <div class="form-group col-md-12">
                     <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="inputPassword4">
                 </div>
                 <div class="form-group col-md-12">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="inputEmail">
                 </div>
             </div>
             <div class="form-group">

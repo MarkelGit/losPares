@@ -11,7 +11,7 @@ public class UsuarioModelo extends Conector {
 
 	// ArrayList<Usuario> selectTodos = new ArrayList<Usuario>();
 
-	UsuarioModelo() {
+	public UsuarioModelo() {
 		super();
 	}
 

@@ -12,5 +12,6 @@
 </head>
 <body>
 <%out.println(usuario.getNombreUsuario()); %>
+<%out.println(usuario.getEmail()); %>
 </body>
 </html>

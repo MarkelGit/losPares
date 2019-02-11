@@ -34,7 +34,7 @@ public class Register extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//Parametroak pasatu, objektua sortu konstruktorearen parametroak respetatuz.
+		
 	}
 
 }

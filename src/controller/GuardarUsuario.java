@@ -45,14 +45,14 @@ public class GuardarUsuario extends HttpServlet {
 		//crear usuario
 		Usuario usuario = new Usuario();
 		usuario.setNombreUsuario(inputUsername);
-		usuario.setContraseña(inputPassword4);
+		usuario.setContrasena(inputPassword4);
 		usuario.setEmail(inputEmail);
 		
 		//crear modelo
 		UsuarioModelo um = new UsuarioModelo();
 		
 		//insertar usuario en BBDD
-		//um.insert(usuario);
+		um.insert(usuario);
 		
 		
 		request.setAttribute("usuario", usuario);

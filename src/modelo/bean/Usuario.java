@@ -4,7 +4,7 @@ public class Usuario extends Persona{
 	private int idusuario;
 	private String nombreUsuario;
 	private String email;
-	private String contraseña;
+	private String contrasena;
 	private boolean activo;
 	
 	//----------------------------CONSTRUCTORES----------------------------
@@ -15,12 +15,12 @@ public class Usuario extends Persona{
 	}
 
 	public Usuario(String nombre, String apellido, int idPersona, int idusuario, String nombreUsuario, String email,
-			String contraseña, boolean activo) {
+			String contrasena, boolean activo) {
 		super(nombre, apellido, idPersona);
 		this.idusuario = idusuario;
 		this.nombreUsuario = nombreUsuario;
 		this.email = email;
-		this.contraseña = contraseña;
+		this.contrasena = contrasena;
 		this.activo = activo;
 	}
 
@@ -54,12 +54,12 @@ public class Usuario extends Persona{
 		this.email = email;
 	}
 
-	public String getContraseña() {
-		return contraseña;
+	public String getContrasena() {
+		return contrasena;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
 	}
 
 	public boolean isActivo() {
@@ -91,7 +91,7 @@ public class Usuario extends Persona{
 	 * @param nombreUsuario
 	 * @param contraseña
 	 */
-	public void logIn(String nombreUsuario, String contraseña) {
+	public void logIn(String nombreUsuario, String contrasena) {
 		
 	}
 

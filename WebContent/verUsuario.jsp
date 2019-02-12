@@ -8,10 +8,33 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <title>Usuario</title>
 </head>
 <body>
-<%out.println(usuario.getNombreUsuario()); %>
-<%out.println(usuario.getEmail()); %>
+<div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputUsername"><%out.println(usuario.getNombreUsuario()); %></label>
+                    <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="inputUsername">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputPassword4"><%out.println(usuario.getContrasena()); %></label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="inputPassword4">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputEmail4"><%out.println(usuario.getEmail()); %></label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="inputEmail">
+                </div>
+            </div>
+
+
+
 </body>
 </html>

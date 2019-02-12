@@ -18,8 +18,8 @@
 
     <title>Usuario</title>
 </head>
-<body>
-	<div class="border border-primary container" style="margin-top: 20px; padding: 12px; max-width: 40%">
+<body class="bg-dark">
+	<div class="border bg-secondary rounded container" style="margin-top: 20px; padding: 12px; max-width: 40%">
 		<h1>REGISTERED</h1>
 			<div class="form-row">
                 <div class="form-group col-md-12">
@@ -34,6 +34,12 @@
                     <label for="inputEmail4">Email</label>
                     <input type="email" class="form-control border border-success" id="inputEmail" placeholder="<%out.println(usuario.getEmail()); %>" readonly name="inputEmail" >
                 </div>
+                <div class="alert alert-success" role="alert" style="margin: 15px 5px;">
+  					You were registered successfully! Click down to finish with the form.
+				</div>
+				<div class="form-group col-md-12">
+					<a href="home" class="btn btn-outline-dark text-light bg-dark my-2 my-sm-0" role="button">Finish</a>
+				</div>
             </div>
     </div>
 

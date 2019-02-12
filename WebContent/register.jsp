@@ -13,9 +13,8 @@
     <title>Register</title>
 </head>
 
-<body>
-
-    <div class="border border-primary container" style="margin-top: 20px; padding: 12px; max-width: 40%">
+<body class="bg-dark">
+    <div class="border bg-secondary rounded container" style="margin-top: 20px; padding: 12px; max-width: 40%">
         <h1>REGISTER</h1>
         <form action="guardarusuario" method="POST">
             <div class="form-row">
@@ -40,7 +39,7 @@
                     </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-outline-dark text-light bg-dark">Sign in</button>
         </form>
     </div>
 

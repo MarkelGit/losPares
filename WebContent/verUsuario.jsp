@@ -19,20 +19,23 @@
     <title>Usuario</title>
 </head>
 <body>
-<div class="form-row">
+	<div class="border border-primary container" style="margin-top: 20px; padding: 12px; max-width: 40%">
+		<h1>REGISTERED</h1>
+			<div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="inputUsername">Username</label>
-                    <input type="text" class="form-control" id="inputUsername" placeholder="<%out.println(usuario.getNombreUsuario()); %>" readonly name="inputUsername" >
+                    <input type="text" class="form-control border border-success" id="inputUsername" placeholder="<%out.println(usuario.getNombreUsuario()); %>" readonly name="inputUsername" >
                 </div>
                 <div class="form-group col-md-12">
                     <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="<%out.println(usuario.getContrasena()); %>" readonly name="inputPassword4" >
+                    <input type="password" class="form-control border border-success" id="inputPassword4" placeholder="<%out.println(usuario.getContrasena()); %>" readonly name="inputPassword4" >
                 </div>
                 <div class="form-group col-md-12">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="<%out.println(usuario.getEmail()); %>" readonly name="inputEmail" >
+                    <input type="email" class="form-control border border-success" id="inputEmail" placeholder="<%out.println(usuario.getEmail()); %>" readonly name="inputEmail" >
                 </div>
             </div>
+    </div>
 
 
 

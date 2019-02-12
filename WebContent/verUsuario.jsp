@@ -21,16 +21,16 @@
 <body>
 <div class="form-row">
                 <div class="form-group col-md-12">
-                    <label for="inputUsername"><%out.println(usuario.getNombreUsuario()); %></label>
-                    <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="inputUsername">
+                    <label for="inputUsername">Username</label>
+                    <input type="text" class="form-control" id="inputUsername" placeholder="<%out.println(usuario.getNombreUsuario()); %>" readonly name="inputUsername" >
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="inputPassword4"><%out.println(usuario.getContrasena()); %></label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="inputPassword4">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="<%out.println(usuario.getContrasena()); %>" readonly name="inputPassword4" >
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="inputEmail4"><%out.println(usuario.getEmail()); %></label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="inputEmail">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="<%out.println(usuario.getEmail()); %>" readonly name="inputEmail" >
                 </div>
             </div>
 

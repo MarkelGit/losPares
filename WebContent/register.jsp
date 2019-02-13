@@ -32,7 +32,7 @@
                 </div>
                 <div class="form-group col-md-12">
                     <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control disabled" id="inputPassword4" placeholder="Password" name="inputPassword4">
+                    <input type="password" class="form-control disabled" id="inputPassword" placeholder="Password" name="inputPassword">
                 </div>
                 <div class="form-group col-md-12">
                     <label for="inputEmail4">Email</label>
@@ -52,8 +52,15 @@
     </div>
     
 	<script>
-      $('#submit').hide();
-      $('#gridCheck').on("change", function () {
+		if ($('#gridCheck').prop("checked")==true) {
+        	$('#submit').fadeIn();
+
+      	}else{
+    		$('#submit').hide();
+    		$('#submit').fadeOut();
+      	}
+	
+     	$('#gridCheck').on("change", function () {
 
         if ($('#gridCheck').prop("checked")==true) {
           $('#submit').fadeIn();

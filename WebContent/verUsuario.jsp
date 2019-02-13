@@ -27,11 +27,11 @@
                     <input type="text" class="form-control border border-success" id="inputUsername" placeholder="<%out.println(usuario.getNombreUsuario()); %>" readonly name="inputUsername" >
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control border border-success" id="inputPassword4" placeholder="<%out.println(usuario.getContrasena()); %>" readonly name="inputPassword4" >
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control border border-success" id="inputPassword" placeholder="<%out.println(usuario.getContrasena()); %>" readonly name="inputPassword" >
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="inputEmail4">Email</label>
+                    <label for="inputEmail">Email</label>
                     <input type="email" class="form-control border border-success" id="inputEmail" placeholder="<%out.println(usuario.getEmail()); %>" readonly name="inputEmail" >
                 </div>
                 <div class="alert alert-success" role="alert" style="margin: 15px 5px;">
@@ -42,8 +42,5 @@
 				</div>
             </div>
     </div>
-
-
-
 </body>
 </html>

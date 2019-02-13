@@ -39,13 +39,13 @@ public class GuardarUsuario extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//recibir parametros
 		String inputUsername = request.getParameter("inputUsername");
-		String inputPassword4 = request.getParameter("inputPassword4");
+		String inputPassword = request.getParameter("inputPassword");
 		String inputEmail = request.getParameter("inputEmail");
 		
 		//crear usuario
 		Usuario usuario = new Usuario();
 		usuario.setNombreUsuario(inputUsername);
-		usuario.setContrasena(inputPassword4);
+		usuario.setContrasena(inputPassword);
 		usuario.setEmail(inputEmail);
 		
 		//crear modelo

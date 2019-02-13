@@ -56,7 +56,7 @@ public class GuardarUsuario extends HttpServlet {
 		
 		
 		request.setAttribute("usuario", usuario);
-		//habrir una vista
+		//abrir una vista
 		request.getRequestDispatcher("verUsuario.jsp").forward(request, response);
 	}
 

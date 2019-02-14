@@ -21,6 +21,7 @@
 <body class="bg-dark">
 	<div class="border border-danger bg-secondary rounded container" style="margin-top: 20px; padding: 12px; max-width: 40%">
 		<h1>SOMETHING WENT WRONG</h1>
+		<form action="guardarusuario" method="POST">
 			<div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="inputUsername">Username</label>
@@ -35,12 +36,13 @@
                     <input type="email" class="form-control border" id="inputEmail" placeholder="<%out.println(usuario.getEmail()); %>" name="inputEmail" >
                 </div>
                 <div class="alert alert-danger" role="alert" style="margin: 15px 5px;">
-  					Something on the form is not okay. please check it out.
+  					Something on the form is not okay. please check it out and fill again the form.
 				</div>
 				<div class="form-group col-md-12">
 					<button id="submit" type="submit" class="btn btn-outline-dark text-light bg-dark">Try again</button>
 				</div>				
 			</div>
+		</form>
     </div>
 </body>
 </html>

@@ -52,12 +52,16 @@ public class GuardarUsuario extends HttpServlet {
 		UsuarioModelo um = new UsuarioModelo();
 		
 		//insertar usuario en BBDD
-		um.insert(usuario);
 		
 		
 		request.setAttribute("usuario", usuario);
 		//abrir una vista
-		request.getRequestDispatcher("verUsuario.jsp").forward(request, response);
+		if (um.insert(usuario)) {
+			request.getRequestDispatcher("verUsuario.jsp").forward(request, response);
+		} else {
+			request.getRequestDispatcher("notRegistered.jsp").forward(request, response);
+		}
+		
 	}
 
 }

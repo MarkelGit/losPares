@@ -28,15 +28,15 @@
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="inputUsername">Username</label>
-                    <input type="text" class="form-control disabled" id="inputUsername" placeholder="Username" name="inputUsername">
+                    <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="inputUsername">
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control disabled" id="inputPassword" placeholder="Password" name="inputPassword">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="inputPassword">
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control disabled" id="inputEmail" placeholder="Email" name="inputEmail">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="inputEmail">
                 </div>
             </div>
             <div class="form-group">

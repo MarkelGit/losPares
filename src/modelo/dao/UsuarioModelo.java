@@ -40,9 +40,9 @@ public class UsuarioModelo extends Conector {
 			pst.setString(2, usuario.getContrasena());
 			pst.setString(3, usuario.getEmail());
 			
-			boolean ok = pst.execute();
+			pst.execute();
 			
-			return ok;
+			return true;
 		} catch (SQLException e) {
 			
 			e.printStackTrace();

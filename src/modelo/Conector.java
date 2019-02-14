@@ -22,8 +22,6 @@ public class Conector {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-			
-		
 	}
 
 	public Connection getConexion() {
